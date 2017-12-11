@@ -23,8 +23,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black
         
+        let v1 = Vector3D(x: 2, y: 5, z: 0)
+        let v2 = Vector3D(x: 1, y: 1, z: 0)
+        print(v1 * v2)
+        
+        print(v1.length)
+        print(v1.normalize)
+        print(v1.distance(v: v2))
+        
+      
+        
         let math = Math()
-        for _ in (0..<500) {
+        for _ in (0..<100) {
             let x:CGFloat = math.random(lowerValue:0, upperValue: self.view.frame.width - 2)
             let y:CGFloat = math.random(lowerValue:0, upperValue: self.view.frame.height - 2)
             let vx:CGFloat = math.random(lowerValue: -5, upperValue: 5)

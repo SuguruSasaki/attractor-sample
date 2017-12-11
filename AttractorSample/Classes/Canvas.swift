@@ -10,6 +10,8 @@ import UIKit
 
 class Canvas: UIView {
 
+    private var eagleContext:EAGLContext?
+    
     private var clearColor:UIColor = UIColor.clear
     
     required init?(coder aDecoder: NSCoder) {
